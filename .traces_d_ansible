@@ -1,0 +1,150 @@
+2025-03-19 20:17:58,006 p=9414 u=deploy n=ansible | {"/usr/lib/python3/dist-packages/ansible_collections": {"amazon.aws": {"version": "8.2.1"}, "ansible.netcommon": {"version": "6.1.3"}, "ansible.posix": {"version": "1.6.2"}, "ansible.utils": {"version": "4.1.0"}, "ansible.windows": {"version": "2.5.0"}, "arista.eos": {"version": "9.0.0"}, "awx.awx": {"version": "24.6.1"}, "azure.azcollection": {"version": "2.7.0"}, "check_point.mgmt": {"version": "5.2.3"}, "chocolatey.chocolatey": {"version": "1.5.3"}, "cisco.aci": {"version": "2.10.1"}, "cisco.asa": {"version": "5.0.1"}, "cisco.dnac": {"version": "6.25.0"}, "cisco.intersight": {"version": "2.0.20"}, "cisco.ios": {"version": "8.0.0"}, "cisco.iosxr": {"version": "9.0.0"}, "cisco.ise": {"version": "2.9.6"}, "cisco.meraki": {"version": "2.18.3"}, "cisco.mso": {"version": "2.9.0"}, "cisco.nxos": {"version": "8.1.0"}, "cisco.ucs": {"version": "1.14.0"}, "cloud.common": {"version": "3.0.0"}, "cloudscale_ch.cloud": {"version": "2.4.0"}, "community.aws": {"version": "8.0.0"}, "community.ciscosmb": {"version": "1.0.9"}, "community.crypto": {"version": "2.22.3"}, "community.digitalocean": {"version": "1.27.0"}, "community.dns": {"version": "3.1.0"}, "community.docker": {"version": "3.13.3"}, "community.general": {"version": "9.5.2"}, "community.grafana": {"version": "1.9.1"}, "community.hashi_vault": {"version": "6.2.0"}, "community.hrobot": {"version": "2.0.2"}, "community.library_inventory_filtering_v1": {"version": "1.0.2"}, "community.libvirt": {"version": "1.3.0"}, "community.mongodb": {"version": "1.7.8"}, "community.mysql": {"version": "3.11.0"}, "community.network": {"version": "5.1.0"}, "community.okd": {"version": "3.0.1"}, "community.postgresql": {"version": "3.9.0"}, "community.proxysql": {"version": "1.6.0"}, "community.rabbitmq": {"version": "1.3.0"}, "community.routeros": {"version": "2.20.0"}, "community.sap_libs": {"version": "1.4.2"}, "community.sops": {"version": "1.9.1"}, "community.vmware": {"version": "4.8.1"}, "community.windows": {"version": "2.3.0"}, "community.zabbix": {"version": "2.5.1"}, "containers.podman": {"version": "1.16.2"}, "cyberark.conjur": {"version": "1.3.1"}, "cyberark.pas": {"version": "1.0.30"}, "dellemc.enterprise_sonic": {"version": "2.5.1"}, "dellemc.openmanage": {"version": "9.9.0"}, "dellemc.powerflex": {"version": "2.5.0"}, "dellemc.unity": {"version": "2.0.0"}, "f5networks.f5_modules": {"version": "1.32.1"}, "fortinet.fortimanager": {"version": "2.8.2"}, "fortinet.fortios": {"version": "2.3.8"}, "frr.frr": {"version": "2.0.2"}, "google.cloud": {"version": "1.4.1"}, "grafana.grafana": {"version": "5.6.0"}, "hetzner.hcloud": {"version": "3.1.1"}, "ibm.qradar": {"version": "3.0.0"}, "ibm.spectrum_virtualize": {"version": "2.0.0"}, "ibm.storage_virtualize": {"version": "2.5.0"}, "ieisystem.inmanage": {"version": "2.0.0"}, "infinidat.infinibox": {"version": "1.4.5"}, "infoblox.nios_modules": {"version": "1.7.1"}, "inspur.ispim": {"version": "2.2.3"}, "inspur.sm": {"version": "2.3.0"}, "junipernetworks.junos": {"version": "8.0.0"}, "kaytus.ksmanage": {"version": "1.2.2"}, "kubernetes.core": {"version": "3.2.0"}, "kubevirt.core": {"version": "1.5.0"}, "lowlydba.sqlserver": {"version": "2.3.4"}, "microsoft.ad": {"version": "1.7.1"}, "netapp.cloudmanager": {"version": "21.24.0"}, "netapp.ontap": {"version": "22.13.0"}, "netapp.storagegrid": {"version": "21.13.0"}, "netapp_eseries.santricity": {"version": "1.4.1"}, "netbox.netbox": {"version": "3.20.0"}, "ngine_io.cloudstack": {"version": "2.5.0"}, "ngine_io.exoscale": {"version": "1.1.0"}, "openstack.cloud": {"version": "2.3.0"}, "openvswitch.openvswitch": {"version": "2.1.1"}, "ovirt.ovirt": {"version": "3.2.0"}, "purestorage.flasharray": {"version": "1.32.0"}, "purestorage.flashblade": {"version": "1.19.1"}, "sensu.sensu_go": {"version": "1.14.0"}, "splunk.es": {"version": "3.0.0"}, "t_systems_mms.icinga_director": {"version": "2.0.1"}, "telekom_mms.icinga_director": {"version": "2.2.1"}, "theforeman.foreman": {"version": "4.2.0"}, "vmware.vmware": {"version": "1.7.1"}, "vmware.vmware_rest": {"version": "3.2.0"}, "vultr.cloud": {"version": "1.13.0"}, "vyos.vyos": {"version": "4.1.0"}, "wti.remote": {"version": "1.0.10"}}}
+2025-03-19 20:18:00,128 p=9429 u=deploy n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2025-03-19 20:18:00,129 p=9429 u=deploy n=ansible | playbook: deploy.yaml
+2025-03-19 20:18:01,795 p=9435 u=deploy n=ansible | {
+    "ansible.builtin.runas": "Run As user",
+    "ansible.builtin.su": "Substitute User",
+    "ansible.builtin.sudo": "Substitute User DO",
+    "ansible.netcommon.enable": "Switch to elevated permissions on a network device",
+    "community.general.doas": "Do As user",
+    "community.general.dzdo": "Centrify's Direct Authorize",
+    "community.general.ksu": "Kerberos substitute user",
+    "community.general.machinectl": "Systemd's machinectl privilege escalation",
+    "community.general.pbrun": "PowerBroker run",
+    "community.general.pfexec": "profile based execution",
+    "community.general.pmrun": "Privilege Manager run",
+    "community.general.run0": "Systemd's run0",
+    "community.general.sesu": "CA Privileged Access Manager",
+    "community.general.sudosu": "Run tasks using sudo su -",
+    "containers.podman.podman_unshare": "Run tasks using podman unshare"
+}
+2025-03-19 20:19:48,642 p=9466 u=deploy n=ansible | PLAY [Apache installation avec Docker] **************************************************************************************
+2025-03-19 20:19:48,729 p=9466 u=deploy n=ansible | TASK [Gathering Facts] ******************************************************************************************************
+2025-03-19 20:19:50,634 p=9466 u=deploy n=ansible | [WARNING]: Platform linux on host srv-apache-1 is using the discovered Python interpreter at /usr/bin/python3.10, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-03-19 20:19:50,634 p=9466 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 20:19:50,640 p=9466 u=deploy n=ansible | TASK [CREATE APACHE CONTAINER] **********************************************************************************************
+2025-03-19 20:19:51,555 p=9466 u=deploy n=ansible | fatal: [srv-apache-1]: FAILED! => {"changed": false, "msg": "Error connecting: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))"}
+2025-03-19 20:19:51,559 p=9466 u=deploy n=ansible | PLAY RECAP ******************************************************************************************************************
+2025-03-19 20:19:51,561 p=9466 u=deploy n=ansible | srv-apache-1               : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-19 20:23:11,404 p=9553 u=deploy n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context. mapping values are not allowed in this context
+  in "<unicode string>", line 7, column 10
+
+The error appears to be in '/home/deploy/webapp/deploy.yaml': line 7, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - name: Install Docker
+      apt:
+         ^ here
+
+2025-03-19 20:25:21,062 p=9584 u=deploy n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context. mapping values are not allowed in this context
+  in "<unicode string>", line 7, column 10
+
+The error appears to be in '/home/deploy/webapp/deploy.yaml': line 7, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - name: Install Docker
+      apt:
+         ^ here
+
+2025-03-19 20:27:42,648 p=9623 u=deploy n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context. mapping values are not allowed in this context
+  in "<unicode string>", line 9, column 10
+
+The error appears to be in '/home/deploy/webapp/deploy.yaml': line 9, column 10, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - name: Install Docker
+      apt:
+         ^ here
+
+2025-03-19 20:30:54,748 p=9677 u=deploy n=ansible | ERROR! 'pre_task' is not a valid attribute for a Play
+
+The error appears to be in '/home/deploy/webapp/deploy.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Apache installation avec Docker
+  ^ here
+
+2025-03-19 20:32:22,971 p=9712 u=deploy n=ansible | PLAY [Apache installation avec Docker] **************************************************************************************
+2025-03-19 20:32:22,980 p=9712 u=deploy n=ansible | TASK [Gathering Facts] ******************************************************************************************************
+2025-03-19 20:32:30,050 p=9712 u=deploy n=ansible | [WARNING]: Platform linux on host srv-apache-1 is using the discovered Python interpreter at /usr/bin/python3.10, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-03-19 20:32:30,051 p=9712 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 20:32:30,057 p=9712 u=deploy n=ansible | TASK [Install Docker] *******************************************************************************************************
+2025-03-19 20:32:48,475 p=9712 u=deploy n=ansible | changed: [srv-apache-1]
+2025-03-19 20:32:48,486 p=9712 u=deploy n=ansible | TASK [Create Apache container] **********************************************************************************************
+2025-03-19 20:32:58,811 p=9712 u=deploy n=ansible | changed: [srv-apache-1]
+2025-03-19 20:32:58,815 p=9712 u=deploy n=ansible | PLAY RECAP ******************************************************************************************************************
+2025-03-19 20:32:58,815 p=9712 u=deploy n=ansible | srv-apache-1               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-19 21:13:52,697 p=4774 u=deploy n=ansible | PLAY [Apache installation avec Docker] *****************************************
+2025-03-19 21:13:52,712 p=4774 u=deploy n=ansible | TASK [Gathering Facts] *********************************************************
+2025-03-19 21:13:59,916 p=4774 u=deploy n=ansible | [WARNING]: Platform linux on host srv-apache-1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-03-19 21:13:59,917 p=4774 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:13:59,923 p=4774 u=deploy n=ansible | TASK [Install Docker] **********************************************************
+2025-03-19 21:14:02,538 p=4774 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:14:02,548 p=4774 u=deploy n=ansible | TASK [Create Apache container] *************************************************
+2025-03-19 21:14:03,567 p=4774 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:14:03,572 p=4774 u=deploy n=ansible | PLAY RECAP *********************************************************************
+2025-03-19 21:14:03,572 p=4774 u=deploy n=ansible | srv-apache-1               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-19 21:16:34,109 p=4853 u=deploy n=ansible | PLAY [Apache installation avec Docker] *****************************************
+2025-03-19 21:16:34,118 p=4853 u=deploy n=ansible | TASK [Gathering Facts] *********************************************************
+2025-03-19 21:16:36,316 p=4853 u=deploy n=ansible | [WARNING]: Platform linux on host srv-apache-1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-03-19 21:16:36,316 p=4853 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:16:36,323 p=4853 u=deploy n=ansible | TASK [Install Docker] **********************************************************
+2025-03-19 21:16:38,901 p=4853 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:16:38,909 p=4853 u=deploy n=ansible | TASK [Create Apache container] *************************************************
+2025-03-19 21:16:39,917 p=4853 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:16:39,922 p=4853 u=deploy n=ansible | PLAY RECAP *********************************************************************
+2025-03-19 21:16:39,922 p=4853 u=deploy n=ansible | srv-apache-1               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-19 21:25:36,204 p=5093 u=deploy n=ansible | [WARNING]: vars does not exist, creating...
+
+2025-03-19 21:32:34,253 p=5225 u=deploy n=ansible | PLAY [Apache installation avec Docker] *******************************************************************
+2025-03-19 21:32:34,261 p=5225 u=deploy n=ansible | TASK [Gathering Facts] ***********************************************************************************
+2025-03-19 21:32:41,475 p=5225 u=deploy n=ansible | [WARNING]: Platform linux on host srv-apache-1 is using the discovered Python interpreter at
+/usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of
+that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html
+for more information.
+
+2025-03-19 21:32:41,476 p=5225 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:32:41,489 p=5225 u=deploy n=ansible | TASK [Install Docker] ************************************************************************************
+2025-03-19 21:32:44,332 p=5225 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:32:44,340 p=5225 u=deploy n=ansible | TASK [Create Apache container] ***************************************************************************
+2025-03-19 21:32:45,351 p=5225 u=deploy n=ansible | ok: [srv-apache-1]
+2025-03-19 21:32:45,357 p=5225 u=deploy n=ansible | PLAY RECAP ***********************************************************************************************
+2025-03-19 21:32:45,357 p=5225 u=deploy n=ansible | srv-apache-1               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
